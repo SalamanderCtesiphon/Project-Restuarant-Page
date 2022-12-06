@@ -1,0 +1,25 @@
+{
+  "name": "project-restuarant-page",
+  "version": "1.0.0",
+  "description": "dynamic webpage using webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalamanderCtesiphon/Project-Restuarant-Page.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Webpack"
+  ],
+  "author": "SalamnderCtesiphon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SalamanderCtesiphon/Project-Restuarant-Page/issues"
+  },
+  "homepage": "https://github.com/SalamanderCtesiphon/Project-Restuarant-Page#readme"
+}
