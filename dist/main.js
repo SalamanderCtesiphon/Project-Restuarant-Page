@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"pageLoad\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n// create a constant for the content id from the html located in the dist folder\nconst content = document.getElementById('content');\n\n// create a function to create the elements for the page\nconst pageLoad = () => {\n    // create a div for the header\n    const header = document.createElement('div');\n    header.setAttribute('id', 'header');\n    content.appendChild(header);\n    // create a div for the main\n    const main = document.createElement('div');\n    main.setAttribute('id', 'main');\n    content.appendChild(main);\n    // create a div for the footer\n    const footer = document.createElement('div');\n    footer.setAttribute('id', 'footer');\n    content.appendChild(footer);\n}\n\n// export the function\n\n\n\n\n//# sourceURL=webpack://project-restuarant-page/./src/page-load.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"pageLoad\": () => (/* binding */ pageLoad)\n/* harmony export */ });\n// create a constant for the content id from the html located in the dist folder\nconst content = document.getElementById('content');\n\n// create a function to create the elements for the page\nconst pageLoad = () => {\n    // create a div for the header\n    const header = document.createElement('div');\n    header.setAttribute('id', 'header');\n    content.appendChild(header);\n    // create a div for the main\n    const main = document.createElement('div');\n    main.setAttribute('id', 'main');\n    content.appendChild(main);\n    // create a div for the footer\n    const footer = document.createElement('div');\n    footer.setAttribute('id', 'footer');\n    content.appendChild(footer);\n}\n\n// export the function\n\n\n\n\n\n//# sourceURL=webpack://project-restuarant-page/./src/page-load.js?");
 
 /***/ })
 
@@ -90,8 +90,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	__webpack_require__("./src/index.js");
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/page-load.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
 ;

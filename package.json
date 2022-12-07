@@ -2,9 +2,10 @@
   "name": "project-restuarant-page",
   "version": "1.0.0",
   "description": "dynamic webpage using webpack",
-  "main": "index.js", 
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/SalamanderCtesiphon/Project-Restuarant-Page#readme",
   "devDependencies": {
+    "css-loader": "^6.7.2",
+    "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   }
