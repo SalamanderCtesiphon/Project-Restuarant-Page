@@ -30,6 +30,10 @@
     height: 80vh;
 }
 
+h1 {
+    padding: 3vh;
+}
+
 .footer {
     background-color: #f1f1f1;
     padding: 20px;
@@ -37,7 +41,13 @@
 }
 
 img {
-    height: 30vh;
-    width: 20vw;
+    height: 50vh;
+    width: 35vw;
+    padding: 3vh;
+}
+
+.description {
+    padding: 3vh;
+    width: 40vw;
 }
 
