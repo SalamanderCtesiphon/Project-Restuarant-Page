@@ -2,3 +2,22 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    height: 5vh;
+    width: 5vw;
+    margin: 1vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

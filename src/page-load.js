@@ -5,15 +5,23 @@ const content = document.getElementById('content');
 // create a function to create the home page
 
 function homePage() {
-    const home = document.createElement('div');
-    home.classList.add('home');
-    home.innerHTML = `
-        <div class="home">
-        <h1>Home</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quia.</p>
-        </div>
-    `;
-    content.appendChild(home);
+    const header = document.createElement('header');
+    const tabOne = document.createElement('div');
+    const tabTwo = document.createElement('div');
+    const tabThree = document.createElement('div');
+    header.classList.add('header');
+    tabOne.classList.add('tab');
+    tabTwo.classList.add('tab');
+    tabThree.classList.add('tab');
+    tabOne.textContent = 'Home';
+    tabTwo.textContent = 'Menu';
+    tabThree.textContent = 'Contact';
+    header.appendChild(tabOne);
+    header.appendChild(tabTwo);
+    header.appendChild(tabThree);
+    content.appendChild(header);
+    
+
 }
 
 export { homePage};
