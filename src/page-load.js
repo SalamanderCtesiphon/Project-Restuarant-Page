@@ -33,9 +33,14 @@ function createMain () {
     main.classList.add('main');
     const title = document.createElement('h1');
     title.textContent = 'Welcome to the best restaurant in town';
+    const image = document.createElement('img');
+    image.src = '../images/spencer-davis-o_XkavUaGEw-unsplash.jpg';
+    image.alt = 'Restaurant';
+
     const description = document.createElement('p');
     description.textContent = 'Local food, local people, local atmosphere';
     main.appendChild(title);
+    main.appendChild(image);
     main.appendChild(description);
     content.appendChild(main);
 }
