@@ -5,6 +5,12 @@ const content = document.getElementById('content');
 // create a function to create the home page
 
 function homePage() {
+    createHeader();
+    createMain();
+    creatFooter();
+}
+
+function createHeader () {
     const header = document.createElement('header');
     const tabOne = document.createElement('div');
     const tabTwo = document.createElement('div');
@@ -20,8 +26,27 @@ function homePage() {
     header.appendChild(tabTwo);
     header.appendChild(tabThree);
     content.appendChild(header);
-    
+}
 
+function createMain () {
+    const main = document.createElement('main');
+    main.classList.add('main');
+    const title = document.createElement('h1');
+    title.textContent = 'Welcome to the best restaurant in town';
+    const description = document.createElement('p');
+    description.textContent = 'Local food, local people, local atmosphere';
+    main.appendChild(title);
+    main.appendChild(description);
+    content.appendChild(main);
+}
+
+function creatFooter () {
+    const footer = document.createElement('footer');
+    footer.classList.add('footer');
+    const footerText = document.createElement('p');
+    footerText.textContent = 'Made by: Your Name';
+    footer.appendChild(footerText);
+    content.appendChild(footer);
 }
 
 export { homePage};
