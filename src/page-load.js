@@ -7,7 +7,7 @@ const content = document.getElementById('content');
 function homePage() {
     createHeader();
     createMain();
-    creatFooter();
+    createFooter();
 }
 
 function createHeader () {
@@ -40,7 +40,7 @@ function createMain () {
     content.appendChild(main);
 }
 
-function creatFooter () {
+function createFooter () {
     const footer = document.createElement('footer');
     footer.classList.add('footer');
     const footerText = document.createElement('p');
