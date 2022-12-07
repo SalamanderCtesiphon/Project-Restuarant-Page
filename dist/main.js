@@ -17,6 +17,16 @@
 
 eval("console.log('Hello World');\n\n//# sourceURL=webpack://project-restuarant-page/./src/index.js?");
 
+/***/ }),
+
+/***/ "./src/page-load.js":
+/*!**************************!*\
+  !*** ./src/page-load.js ***!
+  \**************************/
+/***/ (() => {
+
+eval("\n\n//# sourceURL=webpack://project-restuarant-page/./src/page-load.js?");
+
 /***/ })
 
 /******/ 	});
@@ -25,8 +35,9 @@ eval("console.log('Hello World');\n\n//# sourceURL=webpack://project-restuarant-
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/index.js"]();
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/page-load.js"]();
 /******/ 	
 /******/ })()
 ;
