@@ -25,7 +25,7 @@ eval("console.log('Hello World');\n\n//# sourceURL=webpack://project-restuarant-
   \**************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://project-restuarant-page/./src/page-load.js?");
+eval("// grab the content id from the index.html file\nconst contentId = document.getElementById('content');\n\n\n\n//# sourceURL=webpack://project-restuarant-page/./src/page-load.js?");
 
 /***/ })
 
