@@ -22,6 +22,10 @@
     align-items: center;
 }
 
+.tab:hover {
+    background-color: #ddd;
+}
+
 .main {
     display: flex;
     justify-content: flex-start;
