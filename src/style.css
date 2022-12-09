@@ -22,8 +22,9 @@
     align-items: center;
 }
 
-.tab:hover {
+.tabOne:hover, .tabTwo:hover, .tabThree:hover {
     background-color: #ddd;
+    cursor: pointer;
 }
 
 .main {
