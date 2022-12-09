@@ -4,7 +4,7 @@
 }
 
 .header {
-    background-color: #f1f1f1;
+    background-color: #c7c0c0;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f1f1f1;
 }
 
 .tabOne:hover, .tabTwo:hover, .tabThree:hover {
@@ -40,7 +41,7 @@ h1 {
 }
 
 .footer {
-    background-color: #f1f1f1;
+    background-color: #c7c0c0;
     padding: 20px;
     text-align: center;
 }

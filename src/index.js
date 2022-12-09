@@ -4,8 +4,13 @@ import './style.css';
 import {menuPage} from './menu';
 import {contactPage} from './contact';
 
+function init() {
+    homePage();
+}
+
+init();
+
 let saveState = 'home';
-render();
 
 const content = document.getElementById('content');
 
@@ -19,24 +24,33 @@ getClick();
 
 function getClick () {
     tabOne.addEventListener('click', () => {
-        return saveState = 'home';
+        saveState = 'home';
+        content.innerHTML = '';
+        render();
+        return;
     });
     tabTwo.addEventListener('click', () => {
-        return saveState = 'menu';
+        saveState = 'menu';
+        content.innerHTML = '';
+        render();
+        return;
     });
     tabThree.addEventListener('click', () => {
-        return saveState = 'contact';
+        saveState = 'contact';
+        content.innerHTML = '';
+        render();
+        return;
     });
 }
 
 
 function render () {
     if (saveState === 'home') {
-        homePage();
+        return homePage();
     } else if (saveState === 'menu') {
-        menuPage();
+        return menuPage();
     } else if (saveState === 'contact') {
-        contactPage();
+        return contactPage();
     }
 }
 
