@@ -16,9 +16,9 @@ function createHeader () {
     const tabTwo = document.createElement('div');
     const tabThree = document.createElement('div');
     header.classList.add('header');
-    tabOne.classList.add('tab');
-    tabTwo.classList.add('tab');
-    tabThree.classList.add('tab');
+    tabOne.classList.add('tabOne');
+    tabTwo.classList.add('tabTwo');
+    tabThree.classList.add('tabThree');
     tabOne.textContent = 'Home';
     tabTwo.textContent = 'Menu';
     tabThree.textContent = 'Contact';

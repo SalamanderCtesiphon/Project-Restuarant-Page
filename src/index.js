@@ -8,20 +8,22 @@ const content = document.getElementById('content');
 
 homePage();
 
+const tabOne = document.querySelector('.tabOne');
+const tabTwo = document.querySelector('.tabTwo');
+const tabThree = document.querySelector('.tabThree');
 
-
-const clickTabOne = document.addEventListener('click', () => {
+const clickTabOne = tabOne.addEventListener('click', () => {
     content.innerHTML = '';
     return homePage();
 });
 
-const clickTabTwo = document.addEventListener('click', () => {
+const clickTabTwo = tabTwo.addEventListener('click', () => {
     content.innerHTML = '';
     return menuPage();
 }
 );
 
-const clickTabThree = document.addEventListener('click', () => {
+const clickTabThree = tabThree.addEventListener('click', () => {
     content.innerHTML = '';
     return contactPage();
 }
