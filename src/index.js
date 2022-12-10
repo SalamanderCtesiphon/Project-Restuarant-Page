@@ -14,9 +14,13 @@ const tabOneValue = tabOne.getAttribute('value');
 const tabTwoValue = tabTwo.getAttribute('value');
 const tabThreeValue = tabThree.getAttribute('value');
 
-function init() {homePage();}
+function init() {
+    homePage();
+}
+
 getClick();
 render();
+
 function getClick () {
     tabOne.addEventListener('click', () => {
         return tabOneValue;
