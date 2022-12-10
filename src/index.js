@@ -8,8 +8,7 @@ import {contactPage} from './contact';
 
 const content = document.getElementById('content');
 
-
-createHeader();
+init();
 
 const tabOne = document.querySelector('.tabOne');
 const tabTwo = document.querySelector('.tabTwo');
@@ -18,44 +17,34 @@ const tabOneValue = tabOne.getAttribute('value');
 const tabTwoValue = tabTwo.getAttribute('value');
 const tabThreeValue = tabThree.getAttribute('value');
 
-function createHeader () {
-    const header = document.createElement('header');
-    const tabOne = document.createElement('div');
-    const tabTwo = document.createElement('div');
-    const tabThree = document.createElement('div');
-    header.classList.add('header');
-    tabOne.classList.add('tabOne');
-    tabTwo.classList.add('tabTwo');
-    tabThree.classList.add('tabThree');
-    tabOne.textContent = 'Home';
-    tabTwo.textContent = 'Menu';
-    tabThree.textContent = 'Contact';
-    tabOne.setAttribute('value', 'home');
-    tabTwo.setAttribute('value', 'menu');
-    tabThree.setAttribute('value', 'contact');
-    header.appendChild(tabOne);
-    header.appendChild(tabTwo);
-    header.appendChild(tabThree);
-    content.appendChild(header);
-}
 
 
 function init () {
-    tabOne.addEventListener('click', () => {
-        homePage();
-    });
-    tabTwo.addEventListener('click', () => {
-        menuPage();
-    });
-    tabThree.addEventListener('click', () => {
-        contactPage();
-    });
+    homePage();
 }
 
-init();
 
+// create an object to manage the page content changing the content of the page when the user clicks on the tabs
 
+const pageContent = {
+    home: homePage,
+    menu: menuPage,
+    contact: contactPage
+}
 
+// create a function to change the content of the page when the user clicks on the tabs
+
+function changePage (e) {
+    const value = e.target.getAttribute('value');
+    content.innerHTML = '';
+    pageContent[value]();
+}
+
+// add event listeners to the tabs
+
+tabOne.addEventListener('click', changePage);
+tabTwo.addEventListener('click', changePage);
+tabThree.addEventListener('click', changePage);
 
 
 
