@@ -58,3 +58,24 @@ function render () {
 
 
 
+class Page {
+    constructor() {
+        this.pageSave = 'home';
+    }
+    get page() {
+        return this.pageSave;
+    }
+    set page(value) {
+        if (saveState === 'home') {
+            return homePage();
+        } else if (saveState === 'menu') {
+            return menuPage();
+        } else if (saveState === 'contact') {
+            return contactPage();
+        }
+    }
+}
+
+const page = new Page();
+
+getClick();
