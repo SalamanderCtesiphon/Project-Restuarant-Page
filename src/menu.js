@@ -6,26 +6,7 @@ function menuPage () {
     createFooter();
 }
 
-function createHeader () {
-    const header = document.createElement('header');
-    const tabOne = document.createElement('div');
-    const tabTwo = document.createElement('div');
-    const tabThree = document.createElement('div');
-    header.classList.add('header');
-    tabOne.classList.add('tabOne');
-    tabTwo.classList.add('tabTwo');
-    tabThree.classList.add('tabThree');
-    tabOne.textContent = 'Home';
-    tabTwo.textContent = 'Menu';
-    tabThree.textContent = 'Contact';
-    tabOne.setAttribute('value', 'home');
-    tabTwo.setAttribute('value', 'menu');
-    tabThree.setAttribute('value', 'contact');
-    header.appendChild(tabOne);
-    header.appendChild(tabTwo);
-    header.appendChild(tabThree);
-    content.appendChild(header);
-}
+
 
 function createMain () {
     const main = document.createElement('main');
