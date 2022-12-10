@@ -4,79 +4,37 @@ import './style.css';
 import {menuPage} from './menu';
 import {contactPage} from './contact';
 
-function init() {
-    homePage();
-}
-
 init();
 
-let saveState = 'home';
-
 const content = document.getElementById('content');
-
 const tabOne = document.querySelector('.tabOne');
 const tabTwo = document.querySelector('.tabTwo');
 const tabThree = document.querySelector('.tabThree');
-
 const tabOneValue = tabOne.getAttribute('value');
 const tabTwoValue = tabTwo.getAttribute('value');
 const tabThreeValue = tabThree.getAttribute('value');
 
+function init() {homePage();}
 getClick();
-
+render();
 function getClick () {
     tabOne.addEventListener('click', () => {
-        return value;
+        return tabOneValue;
     });
     tabTwo.addEventListener('click', () => {
-        saveState = 'menu';
-        content.innerHTML = '';
-        render();
-        return;
+        return tabTwoValue;
     });
     tabThree.addEventListener('click', () => {
-        saveState = 'contact';
-        content.innerHTML = '';
-        render();
-        return;
+        return tabThreeValue;
     });
 }
 
-
-
-
-
-
 function render () {
-    if (saveState === 'home') {
+    if (getClick() === 'home') {
         return homePage();
-    } else if (saveState === 'menu') {
+    } else if (getClick() === 'menu') {
         return menuPage();
-    } else if (saveState === 'contact') {
+    } else if (getClick() === 'contact') {
         return contactPage();
     }
 }
-
-
-
-class Page {
-    constructor() {
-        this.pageSave = 'home';
-    }
-    get page() {
-        return this.pageSave;
-    }
-    set page(value) {
-        if (saveState === 'home') {
-            return homePage();
-        } else if (saveState === 'menu') {
-            return menuPage();
-        } else if (saveState === 'contact') {
-            return contactPage();
-        }
-    }
-}
-
-const page = new Page();
-
-getClick();
