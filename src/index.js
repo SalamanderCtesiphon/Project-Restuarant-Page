@@ -19,26 +19,17 @@ function init() {
 }
 
 getClick();
-render();
 
 function getClick () {
     tabOne.addEventListener('click', () => {
-        return tabOneValue;
+        console.log(tabOneValue);
     });
     tabTwo.addEventListener('click', () => {
-        return tabTwoValue;
+        console.log(tabTwoValue);
     });
     tabThree.addEventListener('click', () => {
-        return tabThreeValue;
+        console.log(tabThreeValue);
     });
 }
 
-function render () {
-    if (getClick() === 'home') {
-        return homePage();
-    } else if (getClick() === 'menu') {
-        return menuPage();
-    } else if (getClick() === 'contact') {
-        return contactPage();
-    }
-}
+
