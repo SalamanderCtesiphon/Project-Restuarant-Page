@@ -18,14 +18,15 @@ const tabOne = document.querySelector('.tabOne');
 const tabTwo = document.querySelector('.tabTwo');
 const tabThree = document.querySelector('.tabThree');
 
+const tabOneValue = tabOne.getAttribute('value');
+const tabTwoValue = tabTwo.getAttribute('value');
+const tabThreeValue = tabThree.getAttribute('value');
+
 getClick();
 
 function getClick () {
     tabOne.addEventListener('click', () => {
-        saveState = 'home';
-        content.innerHTML = '';
-        render();
-        return;
+        return value;
     });
     tabTwo.addEventListener('click', () => {
         saveState = 'menu';

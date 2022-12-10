@@ -18,6 +18,9 @@ function createHeader () {
     tabOne.textContent = 'Home';
     tabTwo.textContent = 'Menu';
     tabThree.textContent = 'Contact';
+    tabOne.setAttribute('value', 'home');
+    tabTwo.setAttribute('value', 'menu');
+    tabThree.setAttribute('value', 'contact');
     header.appendChild(tabOne);
     header.appendChild(tabTwo);
     header.appendChild(tabThree);
