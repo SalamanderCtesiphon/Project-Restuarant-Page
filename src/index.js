@@ -20,8 +20,6 @@ const tabThree = document.querySelector('.tabThree');
 
 getClick();
 
-
-
 function getClick () {
     tabOne.addEventListener('click', () => {
         saveState = 'home';
@@ -42,6 +40,10 @@ function getClick () {
         return;
     });
 }
+
+
+
+
 
 
 function render () {
