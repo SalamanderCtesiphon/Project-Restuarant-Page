@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _, { initial } from 'lodash';
 import { homePage } from './page-load';
 import './style.css';
 import {menuPage} from './menu';
@@ -10,6 +10,12 @@ const content = document.getElementById('content');
 
 init();
 
+function init () {
+    return homePage();
+}
+
+
+
 const tabOne = document.querySelector('.tabOne');
 const tabTwo = document.querySelector('.tabTwo');
 const tabThree = document.querySelector('.tabThree');
@@ -19,32 +25,7 @@ const tabThreeValue = tabThree.getAttribute('value');
 
 
 
-function init () {
-    homePage();
-}
 
-
-// create an object to manage the page content changing the content of the page when the user clicks on the tabs
-
-const pageContent = {
-    home: homePage,
-    menu: menuPage,
-    contact: contactPage
-}
-
-// create a function to change the content of the page when the user clicks on the tabs
-
-function changePage (e) {
-    const value = e.target.getAttribute('value');
-    content.innerHTML = '';
-    pageContent[value]();
-}
-
-// add event listeners to the tabs
-
-tabOne.addEventListener('click', changePage);
-tabTwo.addEventListener('click', changePage);
-tabThree.addEventListener('click', changePage);
 
 
 
