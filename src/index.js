@@ -18,18 +18,13 @@ function init() {
     homePage();
 }
 
-getClick();
-
-function getClick () {
-    tabOne.addEventListener('click', () => {
-        console.log(tabOneValue);
-    });
-    tabTwo.addEventListener('click', () => {
-        console.log(tabTwoValue);
-    });
-    tabThree.addEventListener('click', () => {
-        console.log(tabThreeValue);
-    });
+function getClickedTab(e) {
+    const tab = e.target.getAttribute('value');
+    return tab;
 }
+
+
+
+
 
 
