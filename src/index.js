@@ -13,25 +13,47 @@ const tabOne = document.querySelector('.tabOne');
 const tabTwo = document.querySelector('.tabTwo');
 const tabThree = document.querySelector('.tabThree');
 
+
+
+
+class Page {
+    this.name = name;
+    this.content = content;
+    constructor (name, content) {
+        this.name = name;
+        this.content = content;
+    }
+    function display () {
+        content.innerHTML = '';
+        content.appendChild(this.content);
+    }
+}
+
+const home = new Page('home', homePage());
+const menu = new Page('menu', menuPage());
+const contact = new Page('contact', contactPage());
+
+const pages = [home, menu, contact];
+
 function getClick () {
     tabOne.addEventListener('click', () => {
-        content.innerHTML = '';
-        init();
+        home.display();
     }
     );
     tabTwo.addEventListener('click', () => {
-        content.innerHTML = '';
-        menuPage();
+        menu.display();
     }
     );
     tabThree.addEventListener('click', () => {
-        content.innerHTML = '';
-        contactPage();
+        contact.display();
     }
     );    
 }
 
 getClick();
+
+const page = new Page('home', homePage());
+page.display();
 
 
 
