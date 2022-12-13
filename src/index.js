@@ -17,30 +17,46 @@ const tabThree = document.querySelector('.tabThree');
 
 
 
-class Page {
-    constructor (state) {
-        this.state = state;
-    }
-    getClickevent () {
+function clearContent () {
+    content.innerHTML = '';
+}
+
+
+function loop() {
+    let i = 0;
+    content.addEventListener('click', () => {
+        return i++;
+    });
+    if (i < 1000) {
         tabOne.addEventListener('click', () => {
-            this.state = homePage();
-            this.display();
-        })
+            clearContent();
+            homePage();
+            return;
+        }
+        );
         tabTwo.addEventListener('click', () => {
-            this.state = menuPage();
-            this.display();
-        })
+            clearContent();
+            menuPage();
+            return;
+        }
+        );
         tabThree.addEventListener('click', () => {
-            this.state = contactPage();
-            this.display();
-        })
-    }
-    display () {
-        content.innerHTML = '';
-        content.appendChild(this.state);
+            clearContent();
+            contactPage();
+            return;
+        }
+        );
+
     }
 
 }
+
+loop();
+
+
+
+
+
 
 
 
